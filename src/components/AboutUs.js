@@ -5,7 +5,7 @@ import logotest from "../img/icons/html5.svg";
 import logotest2 from "../img/icons/css3.svg";
 import logotest3 from "../img/icons/js.png";
 import logotest4 from "../img/icons/react.svg";
-import logotest5 from "../img/icons/Angular2.png";
+import logotest5 from "../img/icons/php.png";
 
 
 function AboutUs() {
