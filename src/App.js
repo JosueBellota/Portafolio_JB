@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         
         <Routes>       
-            <Route path="/" element={<><Navbar/><Home/><AboutUs/><Projects/><Contactform/></>}/>
+            <Route path="/" element={<><Navbar/><Home/><AboutUs/><Projects/><Contactform/><Footer/></>}/>
         </Routes>
       </div>
       

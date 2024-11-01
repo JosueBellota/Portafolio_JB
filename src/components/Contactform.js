@@ -19,7 +19,7 @@ function Contactform() {
       e.target.reset();
   };
   return (
-    <footer class="footer formulario">
+    <footer class="footer formulario" id="contacto">
       <div className="skew-arriba" id='skew_project'></div>
         <div class="deg-footer"></div>
   
@@ -27,7 +27,7 @@ function Contactform() {
           <div class="footer-content">
             <div class="footer-title">
 
-              <h2 id="contacto" className='h2-mobile'>Connect with Dev</h2>
+              <h2 className='h2-mobile' >Connect with Dev</h2>
               <hr/>
 
             </div>

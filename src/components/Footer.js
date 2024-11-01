@@ -1,28 +1,20 @@
 import React from 'react';
-import './footer.css';
+import './css/footer.css';
 
 function Footer() {
   return (
     <footer className="dark-mode">
-      <div className="footer-container">
-        <div className="footer-column contact-form">
-          <h3>Contact Us</h3>
-          <form>
-            <label htmlFor="name">Name:</label><br />
-            <input type="text" id="name" name="name" /><br />
-            <label htmlFor="email">Email:</label><br />
-            <input type="email" id="email" name="email" /><br />
-            <label htmlFor="message">Message:</label><br />
-            <textarea id="message" name="message"></textarea><br />
-            <input type="submit" value="Submit" />
-          </form>
+      
+      <div class="copyright">
+
+        <div class="container container-copyright">
+
+            {/* <hr class="line-title"/> */}
+            <p class="copyright-small">Copyright ©2024 All rights reserved</p>
+            <p class="copyright-small">Made by - Josue Bellota Ichaso</p>
+
         </div>
-        <div className="footer-column social-media">
-          <h3>Follow Us</h3>
-          <a href="#"><i className="fab fa-twitter"></i> Twitter</a>
-          <a href="#"><i className="fab fa-facebook"></i> Facebook</a>
-          <a href="#"><i className="fab fa-instagram"></i> Instagram</a>
-        </div>
+
       </div>
     </footer>
   );
