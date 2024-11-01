@@ -1,0 +1,22 @@
+
+
+.skew-abajo{
+
+    position: absolute;
+    bottom: 0;
+    left:0;
+    border-width: 9vh 50vw 11vh 50vw;
+    border-style: solid;
+    border-color:transparent transparent #000 transparent;
+    
+    }
+    .skew-arriba{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden !important;
+    border-width: 9vh 50vw 11vh 50vw;
+    border-style: solid;
+    border-color: #000 #000 transparent #000;
+  }

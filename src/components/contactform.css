@@ -1,0 +1,200 @@
+/** Formulario **/
+
+.formulario {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/footer.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  
+  }
+
+  .skew-arriba{
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden !important;
+    border-width: 9vh 50vw 11vh 50vw;
+    border-style: solid;
+    border-color: #000 #000 transparent #000;
+  }
+  
+  .footer .deg-footer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  }
+  
+  .footer .ejeZfooter{
+  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  }
+  .footer .footer-content{
+  
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 6%;
+  text-align: center;
+  }
+  
+  .footer .footer-content .footer-title{
+    
+  position: relative;
+  margin: auto;
+  width: 50%;
+  padding: 15px;
+  -webkit-transition-duration: 0.5s;
+  }
+  /* .footer .footer-content .footer-title:hover
+  {
+  
+    color: #d33c21;
+    -webkit-transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgba(255, 11, 11, 0.383);
+  } */
+  
+  .footer .footer-content .footer-title h2 {
+    font-family: 'Big Shoulders Stencil Display';
+    font-weight: 900;
+    font-size: 30px;
+    width: 50%;
+    color: #fff;
+    margin: 0 auto;
+    transition: 0.5s;
+    text-align: center;
+    margin-top: 12%;
+  }
+  
+  
+  .footer .footer-content .footer-title hr {
+  
+  background: #d33c21;
+  width: 80%;
+  margin: auto;
+  
+  
+  
+  }
+  
+  
+  .footer .footer-content .formulario-content{
+  
+  
+  width: 60%;
+  border-radius: 24px;
+  margin: 0px auto;
+  padding: 30px;
+  }
+  
+  form{
+  
+    margin-top: 50px;
+    transition: all 1s ease-in-out;
+  }
+  
+  .form-control{
+  
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color:#fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+  
+  }
+  
+  input{
+  
+    height: 45px;
+  
+  }
+  
+  #contact-form div{
+  
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .message{
+  
+  margin-right: 90%;
+  color: gray;
+  font-size: 18px;
+  }
+  .contact-form textarea{
+  
+  margin: 0 auto;
+  
+  }
+  
+  form .submit{
+  
+    background:transparent;
+    border: 1px solid #111111;
+    color: #fff;
+    font-size: 20px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10%;
+    padding: 2% 10%;
+    font-family: 'Big Shoulders Stencil Display', sans-serif !important;
+    transition: 0.5s;
+  }
+  form a{
+
+    text-decoration: none;
+
+  }
+  
+  form .submit:hover
+  {
+    background-color: #d33c21;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .footer .footer-content .formulario-content #formulario .send button:hover{
+  
+  background: var(--gray);
+  }
+  
+  .footer .footer-content .footer-text{
+  
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  }
+  
+  @media (max-width: 620px) {
+      
+    .footer .footer-content .footer-title h2{
+
+      padding-top: 50% !important;
+    }
+
+  }    
+
