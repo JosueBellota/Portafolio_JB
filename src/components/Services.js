@@ -1,5 +1,5 @@
 import React from 'react'
-import './services.css';
+import './css/services.css';
 import service1 from '../img/responsive not.jpg';
 import service2 from '../img/Navigation.jpg';
 import service3 from '../img/icons.jpg';

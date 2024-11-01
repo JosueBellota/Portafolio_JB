@@ -1,7 +1,7 @@
 import React from 'react'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import './particles.css';
+import './css/particles.css';
 
 function Particle() {
 

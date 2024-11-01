@@ -1,5 +1,5 @@
 import React from 'react';
-import './aboutus.css';
+import './css/aboutus.css';
 import laptopabout from "../img/desktop.webp";
 import logotest from "../img/icons/html5.svg";
 import logotest2 from "../img/icons/css3.svg";
