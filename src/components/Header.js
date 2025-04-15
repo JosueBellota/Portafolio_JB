@@ -12,34 +12,35 @@ function Header() {
   const [Navscreen, setNavscreen] = useState({});
   const [buttonStyle, setButtonStyle] = useState({});
   const [closeStyle, setCloseStyle] = useState({});
+  const [menuOpen, setMenuOpen] = useState(false);
+
   
   function openMenu() {
-    // set the display style of the mobile navigation menu to 'block'
-    setHeaderOptionStyle({display: 'flex'});
-    // set the visibility style of the menu button to 'hidden'
-    setButtonStyle({visibility: 'hidden'});
-    // set the visibility style of the close button to 'visible'
-    setCloseStyle({visibility: 'visible'});
+   
 
+    setHeaderOptionStyle({display: 'flex'});
+    setButtonStyle({visibility: 'hidden'});
+    setCloseStyle({visibility: 'visible'});
     setNavscreen({visibility: 'hidden'});
+    setMenuOpen(true);
+
   }
   
   function closeMenu() {
-    // set the display style of the mobile navigation menu to 'none'
+
     setHeaderOptionStyle({display: 'none'});
-    // set the visibility style of the menu button to 'visible'
     setButtonStyle({visibility: 'visible'});
-    // set the visibility style of the close button to 'hidden'
     setCloseStyle({visibility: 'hidden'});
     setNavscreen({visibility: 'visible'});
+    setMenuOpen(false);
+
   }
   
 
   return (
     <div className="header">        
         
-    <a className="header__logo" href="#"><img id="main-logo" src={logo} alt=""/></a>
-    <div className='header__nav'></div>
+    <a className="header__logo" href="#">&lt;/&gt;</a>
     <div className='header__nav' style={Navscreen}>
 
       <div className='header__option'>
@@ -65,44 +66,43 @@ function Header() {
 
     </div> 
 
-    <div className='mobile__box'>
+    <Button className='header__toggler' onClick={openMenu} style={buttonStyle}>
+        <MenuIcon className='header__toggler_icon' />
+    </Button>
 
+    <Button className='header__close' onClick={closeMenu} style={{ display: menuOpen ? 'block' : 'none' }} >
+        <CloseIcon className='header__closeIcon'></CloseIcon>
+    </Button>   
+
+    <div className='mobile__box'>
 
       <div className='header__nav__mobile' style={headerOptionStyle}>
 
         <div className='header__option'>
           {/* <Link to = "/"> */}
-          <a href="/" className='header__link'>HOME</a>
+          <a href="/" className='header__link' onClick={closeMenu}>HOME</a>
           {/* </Link> */}
         </div>
 
         <div className='header__option'>
-          <a href="#about" className='header__link'>ABOUT ME</a>
+          <a href="#about" className='header__link' onClick={closeMenu}>ABOUT ME</a>
         </div>
 
         <div className='header__option'>
-          <a href="#projects" className='header__link'>PROJECT</a>
+          <a href="#projects" className='header__link' onClick={closeMenu}>PROJECT</a>
         </div>
+
+        {/* <div className='header__option'>
+          <a href="#services_title" className='header__link' onClick={closeMenu}>SERVICES</a>
+        </div> */}
 
         <div className='header__option'>
-          <a href="#services_title" className='header__link'>SERVICES</a>
+          <a href="#contacto" className='header__link' onClick={closeMenu}>CONTACT</a>
         </div>
-
-        <div className='header__option'>
-          <a href="#contacto" className='header__link'>CONTACT</a>
-        </div>
-
-        <Button className='header__close' onClick={closeMenu} style={closeStyle} >
-          <CloseIcon></CloseIcon>
-        </Button>            
         
       </div> 
 
-      <Button className='header__toggler' onClick={openMenu} style={buttonStyle}>
-        <MenuIcon className='header__toggler_icon' />
-      </Button>
       
-
 
     </div>
   

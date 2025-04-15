@@ -3,13 +3,14 @@ import './css/Home.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import user from '../img/transparent2.png';
+import user from '../img/test_background.jpg';
 import Particle from './Particle';
 // import logotest from "../img/logo.png";
 
 function Home() {
   return (
     <div>
+      
       <Particle/>
 
       <div className="container"  id='home'>
@@ -26,10 +27,11 @@ function Home() {
       <div class="social-icons">
         <ul>
           <a href="https://www.linkedin.com/in/josue-bellota-b50476182" target="_blank"><LinkedInIcon className="social__icon"></LinkedInIcon></a>
-          <a href="https://github.com/Jhosua1769?tab=projects" target="_blank"><GitHubIcon className="social__icon"></GitHubIcon></a>
-          <a href="https://www.instagram.com/mr_eichen/?hl=en" target="_blank"><InstagramIcon className="social__icon"></InstagramIcon></a>
+          <a href="https://github.com/JosueBellota" target="_blank"><GitHubIcon className="social__icon"></GitHubIcon></a>
+          <a href="https://www.instagram.com/josue_bellota/" target="_blank"><InstagramIcon className="social__icon"></InstagramIcon></a>
         </ul>
       </div>
+      
     </div>
   )
 }
