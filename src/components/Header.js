@@ -17,7 +17,6 @@ function Header() {
   
   function openMenu() {
    
-
     setHeaderOptionStyle({display: 'flex'});
     setButtonStyle({visibility: 'hidden'});
     setCloseStyle({visibility: 'visible'});
@@ -38,6 +37,7 @@ function Header() {
   
 
   return (
+    
     <div className="header">        
         
     <a className="header__logo" href="#">&lt;/&gt;</a>
