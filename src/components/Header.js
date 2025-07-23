@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 import './css/Header.css';
 import { Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../img/logo.png';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Header() {
 
-  const linkStyle = {textDecoration: 'none'};
   const [headerOptionStyle, setHeaderOptionStyle] = useState({});
   const [Navscreen, setNavscreen] = useState({});
   const [buttonStyle, setButtonStyle] = useState({});
-  const [closeStyle, setCloseStyle] = useState({});
   const [menuOpen, setMenuOpen] = useState(false);
 
   
@@ -19,7 +16,6 @@ function Header() {
    
     setHeaderOptionStyle({display: 'flex'});
     setButtonStyle({visibility: 'hidden'});
-    setCloseStyle({visibility: 'visible'});
     setNavscreen({visibility: 'hidden'});
     setMenuOpen(true);
 
@@ -29,7 +25,6 @@ function Header() {
 
     setHeaderOptionStyle({display: 'none'});
     setButtonStyle({visibility: 'visible'});
-    setCloseStyle({visibility: 'hidden'});
     setNavscreen({visibility: 'visible'});
     setMenuOpen(false);
 
@@ -39,7 +34,7 @@ function Header() {
   return (
     
     <div className="header">        
-        
+    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
     <a className="header__logo" href="#">&lt;/&gt;</a>
     <div className='header__nav' style={Navscreen}>
 
@@ -54,10 +49,6 @@ function Header() {
       <div className='header__option'>
         <a href="#projects" className='header__link'>PROJECTS</a>
       </div>
-
-      {/* <div className='header__option'>
-        <a href="#services_title" className='header__link'>SERVICES</a>
-      </div> */}
 
       <div className='header__option'>
         <a href="#contacto" className='header__link'>CONTACT</a>
@@ -79,9 +70,9 @@ function Header() {
       <div className='header__nav__mobile' style={headerOptionStyle}>
 
         <div className='header__option'>
-          {/* <Link to = "/"> */}
+
           <a href="/" className='header__link' onClick={closeMenu}>HOME</a>
-          {/* </Link> */}
+
         </div>
 
         <div className='header__option'>
@@ -91,10 +82,6 @@ function Header() {
         <div className='header__option'>
           <a href="#projects" className='header__link' onClick={closeMenu}>PROJECT</a>
         </div>
-
-        {/* <div className='header__option'>
-          <a href="#services_title" className='header__link' onClick={closeMenu}>SERVICES</a>
-        </div> */}
 
         <div className='header__option'>
           <a href="#contacto" className='header__link' onClick={closeMenu}>CONTACT</a>

@@ -26,9 +26,9 @@ function Home() {
     
       <div class="social-icons">
         <ul>
-          <a href="https://www.linkedin.com/in/josue-bellota-b50476182" target="_blank"><LinkedInIcon className="social__icon"></LinkedInIcon></a>
-          <a href="https://github.com/JosueBellota" target="_blank"><GitHubIcon className="social__icon"></GitHubIcon></a>
-          <a href="https://www.instagram.com/josue_bellota/" target="_blank"><InstagramIcon className="social__icon"></InstagramIcon></a>
+          <a href="https://www.linkedin.com/in/josue-bellota-b50476182" target="_blank" rel="noreferrer"><LinkedInIcon className="social__icon"></LinkedInIcon></a>
+          <a href="https://github.com/JosueBellota" target="_blank" rel="noreferrer"><GitHubIcon className="social__icon" ></GitHubIcon></a>
+          <a href="https://www.instagram.com/josue_bellota/" target="_blank" rel="noreferrer"><InstagramIcon className="social__icon" ></InstagramIcon></a>
         </ul>
       </div>
       

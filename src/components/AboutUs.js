@@ -9,9 +9,6 @@ import logotest5 from "../img/icons/php.png";
 
 
 function AboutUs() {
-
-    const aboutus = 'about-us';
-    
     
     return (      
         <div className="about" id='about'>
