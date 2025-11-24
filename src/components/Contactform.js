@@ -20,7 +20,7 @@ function Contactform() {
   };
   return (
     <footer class="footer formulario" id="contacto">
-      <div className="skew-arriba" id='skew_project'></div>
+      {/* <div className="skew-arriba" id='skew_project'></div> */}
         <div class="deg-footer"></div>
   
           <div class="ejeZ-footer"></div>
