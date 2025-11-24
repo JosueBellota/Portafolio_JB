@@ -14,10 +14,10 @@
 .project-title h2 {
   font-family: 'Big Shoulders Stencil Display', sans-serif;
   font-weight: 900;
-  font-size: 40px;
-  color: #000;
+  font-size: var(--font-size-4xl);
+  color: var(--black);
   margin: 0 auto 50px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid var(--black);
   padding-bottom: 10px;
   width: fit-content;
 }
@@ -29,7 +29,7 @@
 }
 
 .project-card {
-  background-color: #000;
+  background-color: var(--black);
   border-radius: 1.7rem;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -53,15 +53,15 @@
 }
 
 .project-card__content h3 {
-  font-size: 1.5rem;
+  font-size: var(--font-size-2xl);
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #fff;
+  color: var(--white);
 }
 
 .project-card__content p {
-  font-size: 1rem;
-  color: #fff;
+  font-size: var(--font-size-base);
+  color: var(--white);
   margin-bottom: 1.5rem;
 }
 
@@ -74,10 +74,10 @@
 
 .project-card__stack span {
   background-color: #333;
-  color: #fff;
+  color: var(--white);
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: var(--font-size-sm);
 }
 
 .project-card__links {
@@ -87,7 +87,7 @@
 
 .project-card__links .btn {
   text-decoration: none;
-  color: #fff;
+  color: var(--white);
   background-color: #171717;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -96,7 +96,7 @@
 }
 
 .project-card__links .btn:hover {
-  background-color: #0056b3;
+  background-color: var(--blue);
 }
 
 .project-card__links .btn.github {
@@ -104,7 +104,7 @@
 }
 
 .project-card__links .btn.github:hover {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 @media (max-width: 768px) {

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--white);
   height: calc( 100vh + 50px) !important;
 
 }
@@ -26,7 +26,7 @@
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #fff;
+  border: 5px solid var(--white);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -48,16 +48,16 @@
 .hero-text h1 {
   font-family: 'Big Shoulders Stencil Display', sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: var(--font-size-5xl);
   margin-bottom: 0.5rem;
   line-height: 1.1;
-  color: #fff;
+  color: var(--white);
   animation: fadeInDown 1s ease-in-out;
 }
 
 .hero-text p {
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: var(--font-size-xl);
   color: #eee;
   animation: fadeInDown 1s ease-in-out 0.2s;
 }
@@ -70,15 +70,15 @@
 }
 
 .social-links a .icon-profile{
-  color: #fff;
-  font-size: 2rem;
+  color: var(--white);
+  font-size: var(--font-size-2xl);
   transition: color 0.3s ease;
   align-items: center;
 }
 
 
 .social-links a {
-  color: #fff;
+  color: var(--white);
   font-size: 3rem;
   transition: color 0.3s ease;
   align-items: center;
@@ -86,7 +86,7 @@
 
 
 .social-links a .icon-profile:hover {
-  color: #007bff;
+  color: var(--orange);
 }
 
 
