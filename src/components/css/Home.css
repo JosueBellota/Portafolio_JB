@@ -71,17 +71,20 @@
 
 .social-links a .icon-profile{
   color: var(--white);
-  font-size: var(--font-size-2xl);
+  font-size: 2rem;
   transition: color 0.3s ease;
   align-items: center;
+  overflow: hidden;
 }
 
 
 .social-links a {
   color: var(--white);
-  font-size: 3rem;
+  margin-top: 1rem;
   transition: color 0.3s ease;
   align-items: center;
+  display: contents;  
+  
 }
 
 
