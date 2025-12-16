@@ -28,12 +28,12 @@ function Home() {
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
               },
               resize: true,
             },
@@ -44,6 +44,12 @@ function Home() {
               repulse: {
                 distance: 200,
                 duration: 0.4,
+              },
+              grab: {
+                distance: 140,
+                links: {
+                  opacity: 1,
+                },
               },
             },
           },
@@ -76,7 +82,7 @@ function Home() {
                 enable: true,
                 area: 800,
               },
-              value: 80,
+              value: 40,
             },
             opacity: {
               value: 0.5,
@@ -85,7 +91,7 @@ function Home() {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 3 },
             },
           },
           detectRetina: true,
