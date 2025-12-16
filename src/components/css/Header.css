@@ -57,30 +57,13 @@
   padding: 0 20px 0;
 }
 
-.header__toggler {
-  display: none !important;
-  position: absolute !important;
-  top: 0 !important;
-  right: 0 !important;
-  z-index: 2 !important;
-}
-
-.header__toggler_icon {
-  position: relative;
-  font-size: 3rem !important;
-  color: var(--white);
-}
-
-.header__close {
+/* Mobile Controls */
+.header__mobile-controls {
   display: none;
-  position: absolute !important;
-  top: 0 !important;
-  right: 0 !important;
-  z-index: 2 !important;
 }
 
+.header__toggler_icon,
 .header__closeIcon {
-  position: relative;
   font-size: 3rem !important;
   color: var(--white);
 }
@@ -89,22 +72,30 @@
   color: red;
 }
 
+/* Mobile Menu Container */
 .mobile__box {
-  display: flex;
+  display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+  height: 100vh;
+  background: var(--black);
+  z-index: 99;
+}
+
+.mobile__box.active {
+  display: flex;
 }
 
 .mobile__box .header__nav__mobile {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: var(--black);
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .mobile__box .header__nav__mobile .header__option {
@@ -125,7 +116,7 @@
   align-items: center;
   text-decoration: none;
   color: var(--white);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-2xl); /* Default size for mobile */
   text-align: center;
   transition: 0.5s;
   justify-content: center !important;
@@ -140,28 +131,16 @@
     display: none;
   }
 
-  .header__nav .header__option {
-    display: none;
-  }
-
   .header__logo {
     margin-left: 20px;
   }
 
-  .header__toggler {
-    display: block !important;
-  }
-
-  .header__close {
-    display: none;
-  }
-
-  .mobile__box .header__nav__mobile {
-    display: none;
-  }
-
-  .mobile__box .header__nav__mobile .header__option .header__link {
-    font-size: var(--font-size-2xl);
+  .header__mobile-controls {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 101;
   }
 }
 

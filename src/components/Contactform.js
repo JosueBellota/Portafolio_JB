@@ -1,47 +1,80 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
+import { db } from '../firebase';
+import { collection, addDoc } from 'firebase/firestore';
 import './css/contactform.css';
 
 function Contactform() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const form = useRef();
-
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_gd6ti4i', 'template_2dypft4', form.current, 'Q189Sk0PSAXWzO01Z')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-
-      e.target.reset();
+    addDoc(collection(db, "contacts"), {
+      name: name,
+      email: email,
+      message: message,
+      timestamp: new Date()
+    })
+    .then(() => {
+      alert("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    })
+    .catch((error) => {
+      console.error("Error sending message: ", error);
+      alert("Failed to send message, please try again.");
+    });
   };
+
   return (
-    <footer class="footer formulario" id="contacto">
+    <footer className="footer formulario" id="contacto">
       {/* <div className="skew-arriba" id='skew_project'></div> */}
-        <div class="deg-footer"></div>
+        <div className="deg-footer"></div>
   
-          <div class="ejeZ-footer"></div>
-          <div class="footer-content">
-            <div class="footer-title">
+          <div className="ejeZ-footer"></div>
+          <div className="footer-content">
+            <div className="footer-title">
 
               <h2 className='h2-mobile' >Connect with Dev</h2>
               <hr/>
 
             </div>
 
-            <div class="formulario-content">
-                <form id="contact-form" ref={form} onSubmit={sendEmail}>
-                <input name="user_name" type="text" class="form-control" placeholder="Your Name" required/>
+            <div className="formulario-content">
+                <form id="contact-form" onSubmit={handleSubmit}>
+                <input 
+                  name="user_name" 
+                  type="text" 
+                  className="form-control" 
+                  placeholder="Your Name" 
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
                 <br/>
-                <input name="user_email" type="email" class="form-control" placeholder="Your Email" 
-                required/><br/>
-                <label for="menssage" class="message">Message: </label>
-                <textarea name="message" class="form-control" row="4" required>  
+                <input 
+                  name="user_email" 
+                  type="email" 
+                  className="form-control" 
+                  placeholder="Your Email" 
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                /><br/>
+                <label htmlFor="message" className="message">Message: </label>
+                <textarea 
+                  name="message" 
+                  className="form-control" 
+                  rows="4" 
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                >  
                 </textarea><br/>                    
-                <button type="submit" class="form-control submit" value="SEND MESSAGE">Send Message</button>                               
+                <button type="submit" className="form-control submit" value="SEND MESSAGE">Send Message</button>                               
                 </form>
             </div>
           
