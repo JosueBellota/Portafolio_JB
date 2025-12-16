@@ -15,9 +15,9 @@
   font-family: 'Big Shoulders Stencil Display', sans-serif;
   font-weight: 900;
   font-size: var(--font-size-4xl);
-  color: var(--black);
+  color: var(--white);
   margin: 0 auto 50px;
-  border-bottom: 2px solid var(--black);
+  border-bottom: 2px solid var(--white);
   padding-bottom: 10px;
   width: fit-content;
 }

@@ -3,7 +3,7 @@
 .about{
 
   position: relative;
-  height: 90vh;
+  height: 100vh;
   background: #000;
   width: 100%;
 
@@ -125,10 +125,6 @@
 
 
 @media (max-width: 1200px) {
-
-  .about{
-    height: 100%;
-  }
 
   .h2-mobile{
     font-size: 40px !important;
