@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 import './css/projects.css';
 
 import project2 from '../img/amazon-clone.jpg'
@@ -10,6 +12,10 @@ import project12 from "../img/amazon1.0.jpg"
 import project13 from "../img/linkedin-clone.jpg"
 
 function Projects() {
+  const particlesInit = useCallback(async engine => {
+    await loadFull(engine);
+  }, []);
+
   const projects = [
     {
       title: "E-Commerce",
@@ -71,6 +77,90 @@ function Projects() {
 
   return (
     <section className="our-projects">
+      <Particles
+        id="tsparticles-projects"
+        init={particlesInit}
+        options={{
+          fullScreen: { enable: false },
+          background: {
+            color: {
+              value: "transparent",
+            },
+          },
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: false,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "grab",
+              },
+              resize: true,
+            },
+            modes: {
+              push: {
+                quantity: 4,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+              grab: {
+                distance: 140,
+                links: {
+                  opacity: 1,
+                },
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            collisions: {
+              enable: true,
+            },
+            move: {
+              directions: "none",
+              enable: true,
+              outModes: {
+                default: "bounce",
+              },
+              random: false,
+              speed: 2,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 40,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: "circle",
+            },
+            size: {
+              value: { min: 1, max: 3 },
+            },
+          },
+          detectRetina: true,
+        }}
+        className="particles-bg"
+      />
       <div className="container-project">
         <div className="project-title">
           <h2 id="projects">PROJECTS</h2>
