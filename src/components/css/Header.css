@@ -20,13 +20,27 @@
   margin-left: 50px;
 }
 
+.header__right {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  gap: 30px;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: fit-content;
   height: 50px;
-  margin-right: 50px;
+}
+
+.header__lang {
+  color: var(--white);
+  font-weight: 700;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  font-family: 'Roboto', sans-serif;
 }
 
 .header__nav .header__option {
@@ -129,6 +143,10 @@
 @media (max-width: 1000px) {
   .header__nav {
     display: none;
+  }
+
+  .header__right {
+    margin-right: 80px; /* Space for the absolute positioned toggle */
   }
 
   .header__logo {

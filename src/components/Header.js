@@ -20,19 +20,26 @@ function Header() {
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
       <a className="header__logo" href="#">&lt;/&gt;</a>
       
-      {/* Desktop Navigation */}
-      <div className={`header__nav ${menuOpen ? 'hidden' : ''}`}>
-        <div className='header__option'>
-          <a href="/" className='header__link'>HOME</a>
+      <div className="header__right">
+        {/* Desktop Navigation */}
+        <div className={`header__nav ${menuOpen ? 'hidden' : ''}`}>
+          <div className='header__option'>
+            <a href="/" className='header__link'>HOME</a>
+          </div>
+          <div className='header__option'>
+            <a href="#about" className='header__link'>ABOUT</a>
+          </div>
+          <div className='header__option'>
+            <a href="#projects" className='header__link'>PROJECTS</a>
+          </div>
+          <div className='header__option'>
+            <a href="#contacto" className='header__link'>CONTACT</a>
+          </div>
         </div>
-        <div className='header__option'>
-          <a href="#about" className='header__link'>ABOUT</a>
-        </div>
-        <div className='header__option'>
-          <a href="#projects" className='header__link'>PROJECTS</a>
-        </div>
-        <div className='header__option'>
-          <a href="#contacto" className='header__link'>CONTACT</a>
+
+        {/* Language Switcher */}
+        <div className="header__lang">
+          <span>ES</span> | <span>EN</span>
         </div>
       </div>
 
