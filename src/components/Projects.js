@@ -36,6 +36,14 @@ function Projects() {
       github: "https://github.com/JosueBellota/ProyectoDeBiometria"
     },
     {
+      title: "Kastalia - Dungeon Crawler",
+      description: "Videojuego de acción y aventura desarrollado en Unity 6. Enfrenta enemigos en mazmorras con un sistema de combate dinámico, IA inteligente y efectos visuales avanzados (URP, VFX Graph).",
+      stack: ["Unity 6", "C#", "URP", "VFX Graph", "AI Navigation", "Cinemachine"],
+      image: "https://placehold.co/600x400/000000/FFFFFF/png?text=Coming+Soon",
+      liveDemo: null,
+      github: "https://github.com/JosueBellota/Kastalia-Proyecto-Videojuegos-UPV"
+    },
+    {
       title: "Amazon-Clone",
       description: "The Amazon-Clone project is a website development project that aims to create an e-commerce platform similar to Amazon. The website will allow customers to browse and buy a variety of products online.",
       stack: ["React", "CSS"],
@@ -205,7 +213,9 @@ function Projects() {
                   ))}
                 </div>
                 <div className="project-card__links">
-                  <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a>
+                  {project.liveDemo && (
+                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a>
+                  )}
                   <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">Github</a>
                 </div>
               </div>

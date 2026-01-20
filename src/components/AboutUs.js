@@ -10,6 +10,9 @@ import CodeIcon from '@mui/icons-material/Code';
 import HtmlIcon from '@mui/icons-material/Html';
 import CssIcon from '@mui/icons-material/Css';
 import TerminalIcon from '@mui/icons-material/Terminal';
+import GamepadIcon from '@mui/icons-material/Gamepad';
+import DataObjectIcon from '@mui/icons-material/DataObject';
+import MovieIcon from '@mui/icons-material/Movie';
 
 
 function AboutUs() {
@@ -44,6 +47,9 @@ function AboutUs() {
                             <li><StorageIcon sx={{ fontSize: 35, color: "#00758F" }} /></li>
                             <li><CloudIcon sx={{ fontSize: 35, color: "#FFCA28" }} /></li>
                             <li><MemoryIcon sx={{ fontSize: 35, color: "#00979D" }} /></li>
+                            <li><GamepadIcon sx={{ fontSize: 35, color: "#222" }} /></li>
+                            <li><DataObjectIcon sx={{ fontSize: 35, color: "#68217A" }} /></li>
+                            <li><MovieIcon sx={{ fontSize: 35, color: "#E91E63" }} /></li>
                         </ul>
                     </div>
                 </div>
