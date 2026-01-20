@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './css/footer.css';
+import { LanguageContext } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 function Footer() {
+  const { language } = useContext(LanguageContext);
+  const t = translations[language].footer;
+
   return (
     <footer className="dark-mode">
       
-      <div class="copyright">
+      <div className="copyright">
 
-        <div class="container container-copyright">
+        <div className="container container-copyright">
 
-            {/* <hr class="line-title"/> */}
-            <p class="copyright-small">Copyright ©2025 All rights reserved</p>
-            <p class="copyright-small">Made by - Josue Bellota Ichaso</p>
+            {/* <hr className="line-title"/> */}
+            <p className="copyright-small">{t.copyright}</p>
+            <p className="copyright-small">{t.madeBy}</p>
 
         </div>
 

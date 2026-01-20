@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './css/aboutus.css';
 import laptopabout from "../img/desktop.webp";
 import JavascriptIcon from '@mui/icons-material/Javascript';
@@ -13,13 +13,17 @@ import TerminalIcon from '@mui/icons-material/Terminal';
 import GamepadIcon from '@mui/icons-material/Gamepad';
 import DataObjectIcon from '@mui/icons-material/DataObject';
 import MovieIcon from '@mui/icons-material/Movie';
+import { LanguageContext } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 
 function AboutUs() {
+    const { language } = useContext(LanguageContext);
+    const t = translations[language].about;
     
     return (      
         <div className="about" id='about'>
-        <h2 className='h2-mobile'>ABOUT ME</h2>
+        <h2 className='h2-mobile'>{t.title}</h2>
         <div className="about-skills">
 
             <div className="about-info about-image">
@@ -28,14 +32,11 @@ function AboutUs() {
             <div className="about-info">    
                 <div className='about-text'>
                 <p id="about-p">
-                    As a Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer 
-                    a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and 
-                    optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in 
-                    collaborating with cross-functional teams to produce outstanding web applications.
+                    {t.description}
                 </p> 
                 <br/>
                 <div className='skills'>
-                    <p>Tech Stack</p>
+                    <p>{t.techStack}</p>
                     <div className="logos">
                         <ul>
                             <li><HtmlIcon sx={{ fontSize: 40, color: "#E34F26" }} /></li>

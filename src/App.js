@@ -5,19 +5,22 @@ import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Projects from './components/Projects';
 import Contactform from './components/Contactform';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <div className="App">
+    <LanguageProvider>
+      <BrowserRouter>
+        <div className="App">
+          
+          <Routes>       
+              <Route path="/" element={<><Navbar/><Home/><AboutUs/><Projects/><Contactform/><Footer/></>}/>
+          </Routes>
+        </div>
         
-        <Routes>       
-            <Route path="/" element={<><Navbar/><Home/><AboutUs/><Projects/><Contactform/><Footer/></>}/>
-        </Routes>
-      </div>
-      
-    </BrowserRouter>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }
 

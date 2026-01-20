@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useContext } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import './css/Home.css';
@@ -6,8 +6,13 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import user from '../img/test_background.jpg';
+import { LanguageContext } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 function Home() {
+  const { language } = useContext(LanguageContext);
+  const t = translations[language].home;
+
   const particlesInit = useCallback(async engine => {
     await loadFull(engine);
   }, []);
@@ -105,7 +110,7 @@ function Home() {
         <div className="hero-section">
           <div className="hero-text">
             <h1>Josue Bellota</h1>
-            <p>Front End Developer</p>
+            <p>{t.role}</p>
             <div className="social-links">
               <a href="https://www.linkedin.com/in/josue-bellota-b50476182" target="_blank" rel="noopener noreferrer">
                 <LinkedInIcon className='icon-profile'/>

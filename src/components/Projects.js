@@ -1,7 +1,9 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useContext } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import './css/projects.css';
+import { LanguageContext } from '../context/LanguageContext';
+import { translations } from '../translations';
 
 import project2 from '../img/amazon-clone.jpg'
 import project3 from '../img/blog-1.jpg'
@@ -14,20 +16,31 @@ import project14 from "../img/proyectobiometria.png"
 import project15 from "../img/huertosverticales.jpg"
 
 function Projects() {
+  const { language } = useContext(LanguageContext);
+  const t = translations[language].projects;
+
   const particlesInit = useCallback(async engine => {
     await loadFull(engine);
   }, []);
 
   const projects = [
     {
-      title: "Proyecto de Biometría Ambiental Multiplataforma",
-      description: (
+      title: t.biometria.title,
+      description: language === 'es' ? (
         <>
           Sistema integral de monitoreo ambiental para la recolección y visualización de datos de calidad del aire en tiempo real. Incluye nodos sensores Arduino, transmisión BLE a una app Android, y un panel web administrativo con mapas de calor.
           <br /><br />
           <strong>Usuarios de prueba:</strong><br />
           Ciudadano: Correo: ffmusicff20@gmail.com / Contraseña: Testeo77<br />
           Admin: Correo: Endika / Contraseña: ematuteblanco@gmail.com
+        </>
+      ) : (
+        <>
+          Comprehensive environmental monitoring system for real-time air quality data collection and visualization. Includes Arduino sensor nodes, BLE transmission to an Android app, and an administrative web dashboard with heat maps.
+          <br /><br />
+          <strong>Test Users:</strong><br />
+          Citizen: Email: ffmusicff20@gmail.com / Password: Testeo77<br />
+          Admin: Email: Endika / Password: ematuteblanco@gmail.com
         </>
       ),
       stack: ["React", "Firebase", "Android", "Arduino", "IoT", "Java", "C++", "JavaScript", "Bootstrap"],
@@ -36,29 +49,36 @@ function Projects() {
       github: "https://github.com/JosueBellota/ProyectoDeBiometria"
     },
     {
-      title: "Kastalia - Dungeon Crawler",
-      description: "Videojuego de acción y aventura desarrollado en Unity 6. Enfrenta enemigos en mazmorras con un sistema de combate dinámico, IA inteligente y efectos visuales avanzados (URP, VFX Graph).",
+      title: t.kastalia.title,
+      description: t.kastalia.description,
       stack: ["Unity 6", "C#", "URP", "VFX Graph", "AI Navigation", "Cinemachine"],
       image: "https://placehold.co/600x400/000000/FFFFFF/png?text=Coming+Soon",
       liveDemo: null,
       github: "https://github.com/JosueBellota/Kastalia-Proyecto-Videojuegos-UPV"
     },
     {
-      title: "Amazon-Clone",
-      description: "The Amazon-Clone project is a website development project that aims to create an e-commerce platform similar to Amazon. The website will allow customers to browse and buy a variety of products online.",
+      title: t.amazon.title,
+      description: t.amazon.description,
       stack: ["React", "CSS"],
       image: project12,
       liveDemo: "https://ecommerce-f4b53.web.app/",
       github: "https://github.com"
     },
     {
-      title: "Gestión de Huertos Verticales",
-      description: (
+      title: t.huertos.title,
+      description: language === 'es' ? (
         <>
           Plataforma web integral para la gestión y monitoreo inteligente de huertos verticales. Permite administrar cultivos, visualizar datos de sensores (humedad, pH, luz) en tiempo real y optimizar el cuidado mediante decisiones basadas en datos.
           <br /><br />
           <strong>Usuario de prueba:</strong><br />
           Correo: Test / Contraseña: Test7
+        </>
+      ) : (
+        <>
+          Comprehensive web platform for intelligent management and monitoring of vertical gardens. Allows crop management, real-time visualization of sensor data (humidity, pH, light), and care optimization through data-driven decisions.
+          <br /><br />
+          <strong>Test User:</strong><br />
+          Email: Test / Password: Test7
         </>
       ),
       stack: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "Chart.js"],
@@ -67,21 +87,22 @@ function Projects() {
       github: "https://github.com/JosueBellota/GTI_Huertos_Verticales"
     },
     {
-      title: "E-Commerce",
-      description: "In this project, we will develop an e-commerce website for selling various products online. The website will allow customers to browse through a range of products, add them to their cart, and make secure online payments.",
+      title: t.ecommerce.title,
+      description: t.ecommerce.description,
       stack: ["React", "Tailwind CSS"],
       image: project11,
       liveDemo: "https://famms-fashion.web.app/",
       github: "https://github.com"
     },
     {
-      title: "Linkedin Clone",
-      description: "The Amazon-Clone project is a website development project that aims to create an e-commerce platform similar to Amazon. The website will allow customers to browse and buy a variety of products online.",
+      title: t.linkedin.title,
+      description: t.linkedin.description,
       stack: ["React", "CSS"],
       image: project13,
       liveDemo: "https://linkedin-4a9f2.web.app/",
       github: "https://github.com"
     },
+
     {
       title: "Blog",
       description: "",
@@ -196,7 +217,7 @@ function Projects() {
       />
       <div className="container-project">
         <div className="project-title">
-          <h2 id="projects">PROJECTS</h2>
+          <h2 id="projects">{t.title}</h2>
         </div>
         <div className="project-grid">
           {projects.map((project, index) => (
@@ -214,9 +235,9 @@ function Projects() {
                 </div>
                 <div className="project-card__links">
                   {project.liveDemo && (
-                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="btn">Live Demo</a>
+                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="btn">{t.liveDemo}</a>
                   )}
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">Github</a>
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn">{t.github}</a>
                 </div>
               </div>
             </div>
