@@ -10,6 +10,8 @@ import project5 from '../img/blog-3.jpg'
 import project11 from "../img/famms1.jpg"
 import project12 from "../img/amazon1.0.jpg"
 import project13 from "../img/linkedin-clone.jpg"
+import project14 from "../img/proyectobiometria.png"
+import project15 from "../img/huertosverticales.jpg"
 
 function Projects() {
   const particlesInit = useCallback(async engine => {
@@ -17,6 +19,22 @@ function Projects() {
   }, []);
 
   const projects = [
+    {
+      title: "Proyecto de Biometría Ambiental Multiplataforma",
+      description: (
+        <>
+          Sistema integral de monitoreo ambiental para la recolección y visualización de datos de calidad del aire en tiempo real. Incluye nodos sensores Arduino, transmisión BLE a una app Android, y un panel web administrativo con mapas de calor.
+          <br /><br />
+          <strong>Usuarios de prueba:</strong><br />
+          Ciudadano: Correo: ffmusicff20@gmail.com / Contraseña: Testeo77<br />
+          Admin: Correo: Endika / Contraseña: ematuteblanco@gmail.com
+        </>
+      ),
+      stack: ["React", "Firebase", "Android", "Arduino", "IoT", "Java", "C++", "JavaScript", "Bootstrap"],
+      image: project14,
+      liveDemo: "https://biometria-app.web.app/",
+      github: "https://github.com/JosueB1998/Biometria"
+    },
     {
       title: "E-Commerce",
       description: "In this project, we will develop an e-commerce website for selling various products online. The website will allow customers to browse through a range of products, add them to their cart, and make secure online payments.",
@@ -41,7 +59,21 @@ function Projects() {
       liveDemo: "https://linkedin-4a9f2.web.app/",
       github: "https://github.com"
     },
-
+    {
+      title: "Gestión de Huertos Verticales",
+      description: (
+        <>
+          Plataforma web integral para la gestión y monitoreo inteligente de huertos verticales. Permite administrar cultivos, visualizar datos de sensores (humedad, pH, luz) en tiempo real y optimizar el cuidado mediante decisiones basadas en datos.
+          <br /><br />
+          <strong>Usuario de prueba:</strong><br />
+          Correo: Test / Contraseña: Test7
+        </>
+      ),
+      stack: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "Chart.js"],
+      image: project15,
+      liveDemo: "#",
+      github: "https://github.com"
+    },
     {
       title: "Blog",
       description: "",
