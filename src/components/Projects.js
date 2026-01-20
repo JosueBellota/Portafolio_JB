@@ -41,14 +41,7 @@ function Projects() {
       liveDemo: "https://linkedin-4a9f2.web.app/",
       github: "https://github.com"
     },
-    {
-      title: "Amazon-Clone",
-      description: "",
-      stack: [],
-      image: project2,
-      liveDemo: "https://ecommerce-f4b53.web.app/",
-      github: "https://github.com"
-    },
+
     {
       title: "Blog",
       description: "",

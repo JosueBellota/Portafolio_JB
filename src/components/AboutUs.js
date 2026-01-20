@@ -3,7 +3,7 @@ import './css/aboutus.css';
 import laptopabout from "../img/desktop.webp";
 import logotest from "../img/icons/html5.svg";
 import logotest2 from "../img/icons/css3.svg";
-import logotest3 from "../img/icons/js.png";
+import JavascriptIcon from '@mui/icons-material/Javascript';
 import logotest4 from "../img/icons/react.svg";
 import logotest5 from "../img/icons/php.png";
 
@@ -33,7 +33,7 @@ function AboutUs() {
                         <ul>
                          <li><img src={logotest} alt="" /></li>
                             <li><img src={logotest2} alt="" /></li>
-                            <li><img src={logotest3} alt="" /></li>
+                            <li><JavascriptIcon sx={{ fontSize: 50, color: "black", backgroundColor: "#f7df1e", borderRadius: "50%" }} /></li>
                             <li><img src={logotest4} alt="" /></li>
                             <li><img src={logotest5} alt="" /></li>
                             {/* <li><img src={logotest} alt="" /></li> */}
