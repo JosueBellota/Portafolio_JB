@@ -32,8 +32,8 @@ function Projects() {
       ),
       stack: ["React", "Firebase", "Android", "Arduino", "IoT", "Java", "C++", "JavaScript", "Bootstrap"],
       image: project14,
-      liveDemo: "https://biometria-app.web.app/",
-      github: "https://github.com/JosueB1998/Biometria"
+      liveDemo: "https://proyectodebiometria.web.app",
+      github: "https://github.com/JosueBellota/ProyectoDeBiometria"
     },
     {
       title: "Amazon-Clone",
@@ -55,8 +55,8 @@ function Projects() {
       ),
       stack: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "Chart.js"],
       image: project15,
-      liveDemo: "#",
-      github: "https://github.com"
+      liveDemo: "https://jbelich.upv.edu.es/",
+      github: "https://github.com/JosueBellota/GTI_Huertos_Verticales"
     },
     {
       title: "E-Commerce",
