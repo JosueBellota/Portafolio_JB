@@ -36,27 +36,11 @@ function Projects() {
       github: "https://github.com/JosueB1998/Biometria"
     },
     {
-      title: "E-Commerce",
-      description: "In this project, we will develop an e-commerce website for selling various products online. The website will allow customers to browse through a range of products, add them to their cart, and make secure online payments.",
-      stack: ["React", "Tailwind CSS"],
-      image: project11,
-      liveDemo: "https://famms-fashion.web.app/",
-      github: "https://github.com"
-    },
-    {
       title: "Amazon-Clone",
       description: "The Amazon-Clone project is a website development project that aims to create an e-commerce platform similar to Amazon. The website will allow customers to browse and buy a variety of products online.",
       stack: ["React", "CSS"],
       image: project12,
       liveDemo: "https://ecommerce-f4b53.web.app/",
-      github: "https://github.com"
-    },
-    {
-      title: "Linkedin Clone",
-      description: "The Amazon-Clone project is a website development project that aims to create an e-commerce platform similar to Amazon. The website will allow customers to browse and buy a variety of products online.",
-      stack: ["React", "CSS"],
-      image: project13,
-      liveDemo: "https://linkedin-4a9f2.web.app/",
       github: "https://github.com"
     },
     {
@@ -72,6 +56,22 @@ function Projects() {
       stack: ["PHP", "MySQL", "JavaScript", "HTML/CSS", "Chart.js"],
       image: project15,
       liveDemo: "#",
+      github: "https://github.com"
+    },
+    {
+      title: "E-Commerce",
+      description: "In this project, we will develop an e-commerce website for selling various products online. The website will allow customers to browse through a range of products, add them to their cart, and make secure online payments.",
+      stack: ["React", "Tailwind CSS"],
+      image: project11,
+      liveDemo: "https://famms-fashion.web.app/",
+      github: "https://github.com"
+    },
+    {
+      title: "Linkedin Clone",
+      description: "The Amazon-Clone project is a website development project that aims to create an e-commerce platform similar to Amazon. The website will allow customers to browse and buy a variety of products online.",
+      stack: ["React", "CSS"],
+      image: project13,
+      liveDemo: "https://linkedin-4a9f2.web.app/",
       github: "https://github.com"
     },
     {

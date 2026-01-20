@@ -1,11 +1,15 @@
 import React from 'react';
 import './css/aboutus.css';
 import laptopabout from "../img/desktop.webp";
-import logotest from "../img/icons/html5.svg";
-import logotest2 from "../img/icons/css3.svg";
 import JavascriptIcon from '@mui/icons-material/Javascript';
-import logotest4 from "../img/icons/react.svg";
-import logotest5 from "../img/icons/php.png";
+import AndroidIcon from '@mui/icons-material/Android';
+import StorageIcon from '@mui/icons-material/Storage';
+import CloudIcon from '@mui/icons-material/Cloud';
+import MemoryIcon from '@mui/icons-material/Memory';
+import CodeIcon from '@mui/icons-material/Code';
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import TerminalIcon from '@mui/icons-material/Terminal';
 
 
 function AboutUs() {
@@ -31,12 +35,15 @@ function AboutUs() {
                     <p>Tech Stack</p>
                     <div className="logos">
                         <ul>
-                         <li><img src={logotest} alt="" /></li>
-                            <li><img src={logotest2} alt="" /></li>
+                            <li><HtmlIcon sx={{ fontSize: 40, color: "#E34F26" }} /></li>
+                            <li><CssIcon sx={{ fontSize: 40, color: "#1572B6" }} /></li>
                             <li><JavascriptIcon sx={{ fontSize: 50, color: "black", backgroundColor: "#f7df1e", borderRadius: "50%" }} /></li>
-                            <li><img src={logotest4} alt="" /></li>
-                            <li><img src={logotest5} alt="" /></li>
-                            {/* <li><img src={logotest} alt="" /></li> */}
+                            <li><TerminalIcon sx={{ fontSize: 35, color: "#61DAFB" }} /></li>
+                            <li><CodeIcon sx={{ fontSize: 35, color: "#4F5D95" }} /></li>
+                            <li><AndroidIcon sx={{ fontSize: 35, color: "#3DDC84" }} /></li>
+                            <li><StorageIcon sx={{ fontSize: 35, color: "#00758F" }} /></li>
+                            <li><CloudIcon sx={{ fontSize: 35, color: "#FFCA28" }} /></li>
+                            <li><MemoryIcon sx={{ fontSize: 35, color: "#00979D" }} /></li>
                         </ul>
                     </div>
                 </div>

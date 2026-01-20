@@ -3,10 +3,12 @@
 .about{
 
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background: #000;
   width: 100%;
   scroll-margin-top: 80px;
+  padding-bottom: 50px;
 }
 
 .about h2{
@@ -37,6 +39,7 @@
   color: #fff;
   background-color: #000;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 .about-info{
 
@@ -92,7 +95,7 @@
 
 .skills ul {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.5rem;
   list-style: none;
 }
@@ -147,7 +150,7 @@
   
   .skills ul {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0.5rem;
     list-style: none;
   }
@@ -241,11 +244,15 @@
     justify-content: center;
     width: 40px;
   }
+  
+  #about-p {
+    text-align: left;
+  }
 }
 
 @media (max-width: 500px){
 
-  .skills ul li {
+  /* .skills ul li {
     display: none;
-  }
+  } */
 }
