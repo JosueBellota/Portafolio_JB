@@ -12,8 +12,9 @@ import project5 from '../img/blog-3.jpg'
 import project11 from "../img/famms1.jpg"
 import project12 from "../img/amazon1.0.jpg"
 import project13 from "../img/linkedin-clone.jpg"
-import project14 from "../img/proyectobiometria.png"
+import project14 from "../img/proyectobiometria.jpg"
 import project15 from "../img/huertosverticales.jpg"
+import projectKastalia from "../img/Kastalia.jpg"
 
 function Projects() {
   const { language } = useContext(LanguageContext);
@@ -52,8 +53,8 @@ function Projects() {
       title: t.kastalia.title,
       description: t.kastalia.description,
       stack: ["Unity 6", "C#", "URP", "VFX Graph", "AI Navigation", "Cinemachine"],
-      image: "https://placehold.co/600x400/000000/FFFFFF/png?text=Coming+Soon",
-      liveDemo: null,
+      image: projectKastalia,
+      liveDemo: "https://josuebellotaichaso.itch.io/kastalia",
       github: "https://github.com/JosueBellota/Kastalia-Proyecto-Videojuegos-UPV"
     },
     {
@@ -62,7 +63,7 @@ function Projects() {
       stack: ["React", "CSS"],
       image: project12,
       liveDemo: "https://ecommerce-f4b53.web.app/",
-      github: "https://github.com"
+      github: "https://github.com/JosueBellota/Amazon-clone"
     },
     {
       title: t.huertos.title,

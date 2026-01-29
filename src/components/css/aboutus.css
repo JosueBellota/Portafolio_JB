@@ -246,7 +246,8 @@
   }
   
   #about-p {
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
@@ -255,4 +256,32 @@
   /* .skills ul li {
     display: none;
   } */
+}
+
+@media (max-width: 400px) {
+  .about h2, .h2-mobile {
+    width: 70% !important;
+    font-size: 30px !important;
+  }
+
+  .about-skills {
+    width: 90%;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  #about-p {
+    font-size: 0.85rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  .skills ul {
+    justify-content: center;
+    padding: 0;
+  }
 }
