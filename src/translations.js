@@ -11,7 +11,7 @@ export const translations = {
     },
     about: {
       title: "SOBRE MÍ",
-      description: "Como desarrollador Front-End, poseo un arsenal impresionante de habilidades en HTML, CSS, JavaScript, React, Tailwind y SCSS. Me destaco en el diseño y mantenimiento de sitios web responsivos que ofrecen una experiencia de usuario fluida. Mi experiencia radica en la creación de interfaces dinámicas y atractivas mediante la escritura de código limpio y optimizado, utilizando herramientas y técnicas de desarrollo de vanguardia. También soy un jugador de equipo que prospera colaborando con equipos multifuncionales para producir aplicaciones web excepcionales.",
+      description: "Como desarrollador Front-End, poseo un arsenal impresionante de habilidades en HTML, CSS, JavaScript, React, Tailwind y SCSS. Me destaco en el diseño y mantenimiento de sitios web responsivos que ofrecen una experiencia de usuario fluida. Mi experiencia radica en la creación de interfaces dinámicas y atractivas mediante la escritura de código limpio y optimizado, utilizando herramientas y técnicas de desarrollo de vanguardia. También soy un jugador de equipo que prospera colaborando con equipos multifuncionales para producir aplicaciones web excepcionales. Además, me mantengo a la vanguardia de las herramientas más recientes, integrando Inteligencia Artificial directamente en mi flujo de trabajo desde la terminal para optimizar cada fase del desarrollo y entregar resultados de máxima calidad de la manera más eficiente posible.",
       techStack: "Stack Tecnológico"
     },
     projects: {
