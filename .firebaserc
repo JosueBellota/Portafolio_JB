@@ -1,7 +1,8 @@
 {
   "projects": {
     "default": "josue-bellota",
-    "josuebellota": "josuebellota-acba5"
+    "josuebellota": "josuebellota-acba5",
+    "josuebellotaichaso": "josuebellotaichaso"
   },
   "targets": {},
   "etags": {}
