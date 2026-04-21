@@ -53,7 +53,7 @@ export const translations = {
       alertError: "Error al enviar el mensaje, por favor intenta de nuevo."
     },
     footer: {
-      copyright: "Copyright ©2025 Todos los derechos reservados",
+      copyright: "Copyright © 2026 Todos los derechos reservados",
       madeBy: "Hecho por - Josue Bellota Ichaso"
     }
   },
@@ -111,7 +111,7 @@ export const translations = {
       alertError: "Failed to send message, please try again."
     },
     footer: {
-      copyright: "Copyright ©2025 All rights reserved",
+      copyright: "Copyright © 2026 All rights reserved",
       madeBy: "Made by - Josue Bellota Ichaso"
     }
   }

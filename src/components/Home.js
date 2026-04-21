@@ -5,7 +5,7 @@ import './css/Home.css';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import user from '../img/test_background.jpg';
+import user from '../img/perfil1.png';
 import { LanguageContext } from '../context/LanguageContext';
 import { translations } from '../translations';
 

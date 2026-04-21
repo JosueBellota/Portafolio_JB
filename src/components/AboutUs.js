@@ -4,6 +4,7 @@ import laptopabout from "../img/desktop.webp";
 import chatgpt from "../img/chatgpt.png";
 import gemini from "../img/gemini.png";
 import reactIcon from "../img/react.png";
+import phpIcon from "../img/php.png";
 import JavascriptIcon from '@mui/icons-material/Javascript';
 import AndroidIcon from '@mui/icons-material/Android';
 import StorageIcon from '@mui/icons-material/Storage';
@@ -47,7 +48,7 @@ function AboutUs() {
                             <Tooltip title="CSS3" arrow><li ><CssIcon sx={{ fontSize: 40, color: "#1572B6" }} /></li></Tooltip>
                             <Tooltip title="JavaScript" arrow><li ><JavascriptIcon sx={{ fontSize: 50, color: "black", backgroundColor: "#f7df1e", borderRadius: "50%" }} /></li></Tooltip>
                             <Tooltip title="React" arrow><li ><img src={reactIcon} alt="React" style={{ width: '35px', height: '35px', objectFit: 'contain' }} /></li></Tooltip>
-                            <Tooltip title="PHP" arrow><li ><CodeIcon sx={{ fontSize: 35, color: "#4F5D95" }} /></li></Tooltip>
+                            <Tooltip title="PHP" arrow><li style={{ backgroundColor: '#4F5D95', boxShadow: 'none' }}><img src={phpIcon} alt="PHP" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'contain' }} /></li></Tooltip>
                             <Tooltip title="Android" arrow><li ><AndroidIcon sx={{ fontSize: 35, color: "#3DDC84" }} /></li></Tooltip>
                             <Tooltip title="SQL/Databases" arrow><li ><StorageIcon sx={{ fontSize: 35, color: "#00758F" }} /></li></Tooltip>
                             <Tooltip title="Firebase/Cloud Services" arrow><li ><CloudIcon sx={{ fontSize: 35, color: "#FFCA28" }} /></li></Tooltip>
